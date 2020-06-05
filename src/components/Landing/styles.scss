@@ -178,7 +178,7 @@
 
         &.right {
             flex: 9;
-            background-image: url("../../assets/images/man.jpg");
+            background-image: url("https://source.unsplash.com/featured/?man,smile");
             background-size: cover;
             background-position: center;
         }
@@ -208,7 +208,7 @@
 
             background: #ffd167;
             border-radius: 50%;
-            animation: circle_yellow_bouncing 1s ease-in-out infinite alternate-reverse;
+            animation: circle_yellow_bouncing 1.1s ease-in-out infinite alternate-reverse;
         }
 
         .green {
@@ -229,7 +229,7 @@
 
             background: #c4ef71;
             border-radius: 50%;
-            animation: circle_green_bouncing 1s ease-in-out infinite alternate-reverse;
+            animation: circle_green_bouncing 1.2s ease-in-out infinite alternate-reverse;
         }
 
         .pink {
@@ -250,7 +250,7 @@
 
             background: #ffb4c4;
             border-radius: 50%;
-            animation: circle_pink_bouncing 1s ease-in-out infinite alternate-reverse;
+            animation: circle_pink_bouncing 1.3s ease-in-out infinite alternate-reverse;
         }
     }
 }

@@ -11,7 +11,7 @@ const PageLanding = () => {
 				</a>
 
 				<nav>
-					<a href="/" className={"link active"}>
+					<a href="#about" className={"link active"}>
 						<span>About</span>
 						<div className={"underline"} />
 					</a>

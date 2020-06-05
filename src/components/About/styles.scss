@@ -1,0 +1,205 @@
+.page#about {
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-color: $main_blue;
+    padding: 0 160vw * 100 / 1920;
+
+    .big_image {
+        height: 930vh * 100 / 1080;
+        width: 653vw * 100 / 1920;
+        position: absolute;
+        bottom: 0;
+        left: 702vw * 100/ 1920;
+    }
+
+    .small_image {
+        height: 332vh * 100 / 1080;
+        width: 250vw * 100 / 1920;
+        position: absolute;
+        bottom: 160vh * 100 / 1080;
+        right: 178vw * 100 / 1920;
+    }
+
+    .page_content {
+        margin-top: 357vh*100/1080;
+
+        h2 {
+            margin: 0;
+            color: #ffffff;
+            font-family: Poppins, sans-serif;
+            font-size: 56vh*100/1080;
+            line-height: 84vh*100/1080;
+            letter-spacing: -0.9333333px;
+        }
+
+        .separator {
+            width: 80px;
+            height: 2px;
+            background: #1574f6;
+            margin: 25vh*100/1080 0 0;
+        }
+
+        p {
+            opacity: 0.6981725;
+            width: 272vw*100/1920;
+            color: #ffffff;
+            font-family: Poppins, sans-serif;
+            font-size: 16vh*100/1080;
+            font-weight: 400;
+            line-height: 32vh*100/1080;
+            letter-spacing: -0.1777778px;
+            margin: 71vh*100/1080 0;
+        }
+
+        .button {
+            width: 260vw*100/1920;
+            height: 80vh*100/1080;
+            background: #1574f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 350ms;
+
+            span {
+                transition: all 350ms;
+                color: #ffffff;
+                font-family: "Futura PT Bold", sans-serif;
+                font-size: 15px;
+                font-weight: 200;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1.615385px;
+            }
+
+            &:hover {
+                transition: all 350ms;
+                background-color: white;
+                cursor: pointer;
+
+                span {
+                    transition: all 350ms;
+                    color: #1574f6;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .big_text {
+        position: absolute;
+        top: 331vh*100/1080;
+        left: 983vw*100/1920;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: #ffffff;
+            font-family: "Futura PT Bold", sans-serif;
+            font-size: 195vh*100/1080;
+            line-height: 189vh*100/1080;
+            letter-spacing: -3.25px;
+        }
+
+        .last_name {
+            margin-left: 157vw*100/1920;
+        }
+    }
+
+    .decoration {
+        .circle {
+            @keyframes about_circles {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0.3;
+                }
+            }
+
+            position: absolute;
+            border-radius: 50%;
+            animation: about_circles 1s ease-in-out infinite alternate;
+
+            &.first {
+                top: 334vh*100/1080;
+                left: 521vw*100/1920;
+                width: 27px;
+                height: 27px;
+                background: #ffd167;
+                animation-delay: 0.1s;
+            }
+
+            &.second {
+                bottom: 423vh*100/1080;
+                left: 622vw*100/1920;
+                width: 10px;
+                height: 10px;
+                background: #1574f6;
+                animation-delay: 0.2s;
+            }
+
+            &.third {
+                bottom: 514vh*100/1080;
+                left: 813vw*100/1920;
+                width: 43px;
+                height: 43px;
+                background: #ffb4c3;
+                animation-delay: 0.3s;
+            }
+
+            &.fourth {
+                top: 468vh*100/1080;
+                right: 474vw*100/1920;
+                width: 24px;
+                height: 24px;
+                background: #1574f6;
+                animation-delay: 0.4s;
+            }
+
+            &.fifth {
+                bottom: 295vh*100/1080;
+                right: 504vw*100/1920;
+                width: 17px;
+                height: 17px;
+                background: #ffb4c4;
+                animation-delay: 0.5s;
+            }
+
+            &.sixth {
+                bottom: 52vh*100/1080;
+                right: 279vw*100/1920;
+                width: 10px;
+                height: 10px;
+                background: #ffd167;
+                animation-delay: 0.6s;
+            }
+        }
+
+        .triangle {
+            @keyframes about_triangles {
+                from {
+                    transform: scale(0.8);
+                }
+                to {
+                    transform: scale(1.2);
+                }
+            }
+            position: absolute;
+            animation: about_triangles 1s ease-in-out infinite alternate;
+
+            &.first {
+                bottom: 242vh*100/1080;
+                left: 577vw*100/1920;
+                animation-delay: 0.1s;
+            }
+
+            &.second {
+                bottom: 69vh*100/1080;
+                right: 486vw*100/1920;
+                animation-delay: 0.2s;
+            }
+        }
+    }
+}
