@@ -1,44 +1,44 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 const PageLanding = () => {
 	return (
-		<section className={"page"} id={"landing"}>
+		<section className={'page'} id={'landing'}>
 			<header>
-				<a href="/" className={"link"} id={"home"}>
+				<a href="/" className={'link'} id={'home'}>
 					JOHN SILVER
 				</a>
 
 				<nav>
-					<a href="#about" className={"link active"}>
+					<a href="#about" className={'link active'}>
 						<span>About</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 
-					<a href="/" className={"link"}>
+					<a href="#live_dates" className={'link'}>
 						<span>Live Dates</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 
-					<a href="/" className={"link"}>
+					<a href="/" className={'link'}>
 						<span>Watch John</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 
-					<a href="/" className={"link"}>
+					<a href="/" className={'link'}>
 						<span>Videos</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 
-					<a href="/" className={"link"}>
+					<a href="/" className={'link'}>
 						<span>Follow John</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 
-					<a href="/" className={"link"}>
+					<a href="/" className={'link'}>
 						<span>Contact</span>
-						<div className={"underline"} />
+						<div className={'underline'} />
 					</a>
 				</nav>
 			</header>
@@ -57,12 +57,12 @@ const PageLanding = () => {
 
 					<div className="form">
 						<div className="email_container">
-							<input type="email" placeholder={"Email"} />
+							<input type="email" placeholder={'Email'} />
 						</div>
 
 						<div className="button">
 							<span>
-								SIGN UP{" "}
+								SIGN UP{' '}
 								<FontAwesomeIcon icon={faLongArrowAltRight} />
 							</span>
 						</div>

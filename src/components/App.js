@@ -1,7 +1,8 @@
-import React from "react";
-import PageLanding from "./Landing";
-import PageAbout from "./About";
-import WIP from "./common/WIP";
+import React from 'react';
+import PageLanding from './Landing';
+import PageAbout from './About';
+import WIP from './common/WIP';
+import PageLiveDates from './LiveDates';
 
 function App() {
 	return (
@@ -11,6 +12,8 @@ function App() {
 			<PageLanding />
 
 			<PageAbout />
+
+			<PageLiveDates />
 		</>
 	);
 }

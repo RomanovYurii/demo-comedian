@@ -3,14 +3,20 @@
 
 @import "./components/Landing/styles";
 @import "./components/About/styles";
+@import "./components/LiveDates/styles";
 @import "./components/common/WIP/styles";
 
-.link {
-  text-decoration: none;
-}
-
 html, body, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    .link {
+        text-decoration: none;
+    }
+
+    .page {
+        position: relative;
+        display: flex;
+    }
 }

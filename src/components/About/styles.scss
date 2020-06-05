@@ -1,8 +1,6 @@
 .page#about {
-    position: relative;
-    display: flex;
     height: 100%;
-    background-color: $main_blue;
+    background-color: $color_blue_main;
     padding: 0 160vw * 100 / 1920;
 
     .big_image {
@@ -64,9 +62,9 @@
             span {
                 transition: all 350ms;
                 color: #ffffff;
-                font-family: "Futura PT Bold", sans-serif;
+                font-family: "Futura PT", sans-serif;
                 font-size: 15px;
-                font-weight: 200;
+                font-weight: 400;
                 line-height: 20px;
                 text-align: center;
                 text-transform: uppercase;
@@ -96,7 +94,8 @@
 
         span {
             color: #ffffff;
-            font-family: "Futura PT Bold", sans-serif;
+            font-family: "Futura PT", sans-serif;
+            font-weight: bold;
             font-size: 195vh*100/1080;
             line-height: 189vh*100/1080;
             letter-spacing: -3.25px;

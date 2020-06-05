@@ -1,0 +1,200 @@
+.page#live_dates {
+    background-color: #22175b;
+    flex-direction: column;
+    display: flex;
+    padding: 120vh*100/1080 0 144vh*100/1080;
+    align-items: center;
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -24vh*100/1080;
+
+        .name {
+            margin: 0;
+            color: #ffffff;
+            font-family: "Futura PT", sans-serif;
+            font-weight: 700;
+            font-size: 96vh*100/1080;
+            text-align: center;
+            letter-spacing: -1.6vw*100/1920;
+        }
+
+        .separator {
+            width: 2px;
+            height: 106px;
+            background: #d8d8d8;
+            margin: 0 39px;
+        }
+
+        .live {
+            margin: 0;
+            color: #ffb4c3;
+            font-family: "Futura PT", sans-serif;
+            font-size: 96vh*100/1080;
+            font-weight: 700;
+            line-height: 189vh*100/1080;
+            text-align: center;
+            letter-spacing: -1.6vw*100/1920;
+        }
+    }
+
+    .tour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 72vh*100/1080;
+
+        .title {
+            display: flex;
+            opacity: 0.8;
+            color: #ffffff;
+            font-family: "Futura PT", sans-serif;
+            font-size: 28vh*100/1080;
+            font-weight: 400;
+            line-height: 36vh*100/1080;
+            text-align: center;
+            letter-spacing: 6vw*100/1920;
+            margin-bottom: 39vh*100/1080;
+        }
+
+        .performance {
+            position: relative;
+            display: flex;
+            height: 115vh*100/1080;
+            width: 1600vw*100/1920;
+            background-color: white;
+            margin: 0 0 16vh*100/1080;
+            transition: all 350ms;
+
+            &:hover {
+                cursor: pointer;
+                transition: all 350ms;
+                transform: scale(1.05);
+            }
+
+            .cropper_first, .cropper_second {
+                position: absolute;
+                z-index: 1;
+                border-radius: 10vh*100/1080;
+                width: 20vh*100/1080;
+                height: 20vh*100/1080;
+                background: #22175b;
+                top: calc(50% - 10vh*100/1080);
+
+                &.cropper_first {
+                    left: -10vh*100/1080;
+                }
+
+                &.cropper_second {
+                    right: -10vh*100/1080;
+                }
+            }
+
+            .date_holder {
+                display: flex;
+                width: 250vw*100/1920;
+                background: #ffb4c3;
+                justify-content: center;
+                align-items: center;
+
+                .date {
+                    color: #22175b;
+                    font-family: "Futura PT Demi", sans-serif;
+                    font-size: 58vh*100/1080;
+                    font-weight: 400;
+                    line-height: 77vh*100/1080;
+                    text-align: center;
+                    letter-spacing: -1.966667vw*100/1920;
+                    margin-right: 15vw*100/1920;
+                }
+
+                .my {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        color: #22175b;
+                        font-family: "Futura PT", sans-serif;
+                        font-size: 22vh*100/1080;
+                        font-weight: 400;
+                        line-height: 28vh*100/1080;
+                        text-transform: uppercase;
+                        letter-spacing: 1.833333vw*100/1920;
+                    }
+
+                    .month {
+                        margin-bottom: -5vh*100/1080;
+                    }
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                .country {
+                    width: 260vw*100/1920;
+                    text-align: center;
+                }
+
+                .city {
+                    width: 400vw*100/1920;
+                }
+
+                .country, .city {
+                    color: #22175b;
+                    font-family: "Futura PT", sans-serif;
+                    font-size: 32vh*100/1080;
+                    font-weight: 700;
+                    line-height: 41vh*100/1080;
+                    letter-spacing: -0.5333334vw*100/1920;
+                }
+
+                .location {
+                    opacity: 0.7;
+                    color: #22175b;
+                    font-family: "Futura PT", sans-serif;
+                    font-size: 32vh*100/1080;
+                    font-weight: 400;
+                    line-height: 41vh*100/1080;
+                    letter-spacing: -0.5333334vw*100/1920;
+                }
+            }
+
+            .tickets_button {
+                margin-left: auto;
+                width: 385vw*100/1920;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.tickets_available {
+                    background: #1574f6;
+                }
+                &.expiring {
+                    background: #ffd167;
+                }
+                &.sold_out {
+                    background: #ffb4c4;
+                }
+                &.on_sale_soon {
+                    background: #a3a7ac;
+                }
+
+                .status_text {
+                    color: #ffffff;
+                    font-family: "Futura PT", sans-serif;
+                    font-size: 18vh*100/1080;
+                    font-weight: 700;
+                    line-height: 23vh*100/1080;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5vw*100/1920;
+                }
+            }
+        }
+    }
+}

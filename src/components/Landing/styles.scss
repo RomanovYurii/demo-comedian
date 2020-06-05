@@ -1,8 +1,5 @@
 .page#landing {
-    position: relative;
-    display: flex;
     height: 100%;
-    margin-top: 30px;
 
     * {
         outline: none !important;
@@ -20,7 +17,7 @@
             font-size: 22px;
             line-height: 29px;
             letter-spacing: -0.367px;
-            color: $main_blue;
+            color: $color_blue_main;
         }
 
         nav {
@@ -41,7 +38,7 @@
                     font-size: 16px;
                     line-height: 32px;
                     letter-spacing: -0.178px;
-                    color: $main_blue;
+                    color: $color_blue_main;
                     margin-bottom: 16px;
                 }
 
@@ -55,7 +52,7 @@
                         transition: width 350ms;
                         width: 120px;
                         height: 2px;
-                        background: $secondary_blue;
+                        background: $color_blue_secondary;
                     }
                 }
             }
@@ -73,12 +70,12 @@
 
             > div:first-of-type {
                 h1 {
-                    font-family: "Futura PT Book", sans-serif;
-                    color: $main_blue;
+                    font-family: "Futura PT", sans-serif;
+                    font-weight: bold;
+                    color: $color_blue_main;
                     font-size: 18vh;
                     line-height: 17.5vh;
                     letter-spacing: -5px;
-                    font-weight: 100;
                     margin: 19vh 0 3.7vh;
                     max-width: 655px;
                 }
@@ -98,7 +95,7 @@
                 .separator {
                     width: 160px;
                     height: 2px;
-                    background: $secondary_blue;
+                    background: $color_blue_secondary;
                 }
             }
 
